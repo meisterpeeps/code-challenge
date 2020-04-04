@@ -35,10 +35,11 @@ function BreadCrumb({product} : {product: IProduct}){
                 <i className="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
             </Link>
     
-            <a href="product.html" className="s-text16">
-                Women
+            <Link to = {'/shop/1'}href="index.html" className="s-text16">
+                All
                 <i className="fa fa-angle-right m-l-8 m-r-9" aria-hidden="true"></i>
-            </a>
+            </Link>
+    
     
             <a href="#" className="s-text16">
                 T-Shirt

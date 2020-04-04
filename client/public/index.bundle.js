@@ -100,12 +100,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function Categories() {
     return (react_1.default.createElement(react_1.default.Fragment, null,
         react_1.default.createElement("h4", { className: "m-text14 p-b-7" }, " Categories "),
         react_1.default.createElement("ul", { className: "p-b-54" },
             react_1.default.createElement("li", { className: "p-t-4" },
-                react_1.default.createElement("a", { href: "#", className: "s-text13 active1" }, "All")),
+                react_1.default.createElement(react_router_dom_1.Link, { to: '/shop/1', className: "s-text13 active1" }, "All")),
             react_1.default.createElement("li", { className: "p-t-4" },
                 react_1.default.createElement("a", { href: "#", className: "s-text13" }, "Women")),
             react_1.default.createElement("li", { className: "p-t-4" },
@@ -407,8 +408,8 @@ function BreadCrumb({ product }) {
         react_1.default.createElement(react_router_dom_1.Link, { to: '/shop/1', href: "index.html", className: "s-text16" },
             "Home",
             react_1.default.createElement("i", { className: "fa fa-angle-right m-l-8 m-r-9", "aria-hidden": "true" })),
-        react_1.default.createElement("a", { href: "product.html", className: "s-text16" },
-            "Women",
+        react_1.default.createElement(react_router_dom_1.Link, { to: '/shop/1', href: "index.html", className: "s-text16" },
+            "All",
             react_1.default.createElement("i", { className: "fa fa-angle-right m-l-8 m-r-9", "aria-hidden": "true" })),
         react_1.default.createElement("a", { href: "#", className: "s-text16" },
             "T-Shirt",

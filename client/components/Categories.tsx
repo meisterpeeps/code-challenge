@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 export function Categories() {
     return(
@@ -7,9 +8,9 @@ export function Categories() {
 
         <ul className="p-b-54">
             <li className="p-t-4">
-                <a href="#" className="s-text13 active1">
+                <Link to = {'/shop/1'} className="s-text13 active1">
                     All
-                </a>
+                </Link>
             </li>
 
             <li className="p-t-4">
